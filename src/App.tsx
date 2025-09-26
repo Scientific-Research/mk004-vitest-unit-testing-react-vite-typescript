@@ -9,6 +9,9 @@ function App() {
       <h1>Vitest-Unit-Testing-React-Vite-Typescript</h1>
       {/* <p>Message: {message}</p> */}
       <p>Message: {surround(message, '[]')}</p>
+      <p>Message: {surround(message, '()')}</p>
+      <p>Message: {surround(message, 'yxh^kj>>')}</p>
+      <p>Message: {surround(message, '--')}</p>
     </div>
   );
 }
