@@ -7,10 +7,14 @@
 body {
   background-color: #333;
   color: aliceblue;
-  margin: 1rem;
   font-family: 'Courier New', Courier, monospace;
 
   h1 {
     color: yellowgreen;
+    margin: 1rem;
+  }
+
+  p {
+    margin: 1rem;
   }
 }
