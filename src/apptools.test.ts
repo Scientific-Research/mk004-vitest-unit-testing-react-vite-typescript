@@ -21,4 +21,11 @@ describe('test that surround() is correctly implemented', () => {
     expect(surround('test', 'hfkjashdfs')).toBe('test');
     expect(surround('test', 'x')).toBe('test');
   });
+
+  // 4.
+  it('fails gracefully on empty values', () => {
+    expect(surround('test', '')).toBe('test');
+    expect(surround('', '')).toBe('');
+    expect(surround('', '[]')).toBe('[]');
+  });
 });
