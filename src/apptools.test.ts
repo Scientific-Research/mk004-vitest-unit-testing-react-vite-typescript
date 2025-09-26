@@ -14,4 +14,11 @@ describe('test that surround() is correctly implemented', () => {
     expect(surround('test', '**')).toBe('*test*');
     expect(surround('bUsBuS', '||')).toBe('|bUsBuS|');
   });
+
+  // 3.
+  it('fails gracefully on wrong number of characters', () => {
+    expect(surround('test', '---')).toBe('test');
+    expect(surround('test', 'hfkjashdfs')).toBe('test');
+    expect(surround('test', 'x')).toBe('test');
+  });
 });
