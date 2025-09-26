@@ -28,4 +28,10 @@ describe('test that surround() is correctly implemented', () => {
     expect(surround('', '')).toBe('');
     expect(surround('', '[]')).toBe('[]');
   });
+
+  // 5.
+  it('returns untrimmed lines correctly', () => {
+    expect(surround('test ', '**')).toBe('*test *');
+    expect(surround('test', '** ')).toBe('test');
+  });
 });
